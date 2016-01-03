@@ -8,7 +8,6 @@ var Landing = React.createClass({
         return <div>
             <Menu />
             <Docker />
-            hello this is me wonder if after all this year you wanna talk to me
             {this.props.children}
         </div>
     }

@@ -67,8 +67,7 @@
 	    React.createElement(
 	        Route,
 	        { path: "/", component: Landing },
-	        React.createElement(Route, { path: "playground", component: Experiments }),
-	        React.createElement(Route, { path: "blog", component: Landing })
+	        React.createElement(Route, { path: "playground", component: Experiments })
 	    )
 	), document.getElementById('woah'));
 
@@ -24557,7 +24556,6 @@
 	            null,
 	            React.createElement(Menu, null),
 	            React.createElement(Docker, null),
-	            "hello this is me wonder if after all this year you wanna talk to me",
 	            this.props.children
 	        );
 	    }
@@ -24611,15 +24609,6 @@
 	                    Link,
 	                    { to: "playground" },
 	                    "PlayGround"
-	                )
-	            ),
-	            React.createElement(
-	                "div",
-	                { style: menuItemStyle },
-	                React.createElement(
-	                    Link,
-	                    { to: "blog" },
-	                    "Blog"
 	                )
 	            )
 	        );
@@ -24696,7 +24685,7 @@
 	                    ),
 	                    React.createElement(
 	                        "a",
-	                        { href: "https://twitter.com", title: "Twitter" },
+	                        { href: "https://twitter.com/afahocci", title: "Twitter" },
 	                        React.createElement("img", { src: "./images/Twitter.png" })
 	                    )
 	                ),
@@ -24732,7 +24721,7 @@
 	                    ),
 	                    React.createElement(
 	                        "a",
-	                        { href: "https://linkedin.com", title: "Linkedin" },
+	                        { href: "https://www.linkedin.com/profile/view?id=AAIAAAkRIDgBtj5Y7NgzNzz62OhWdWHfE9lPtiU&trk=nav_responsive_tab_profile_pic", title: "Linkedin" },
 	                        React.createElement("img", { src: "./images/LinkedIn.png" })
 	                    )
 	                ),
@@ -24780,8 +24769,6 @@
 	        return React.createElement(
 	            "div",
 	            null,
-	            React.createElement(Menu, null),
-	            React.createElement(Docker, null),
 	            React.createElement(ListProjects, null),
 	            this.props.children
 	        );

@@ -18,7 +18,6 @@ ReactDOM.render(
     <Router>
         <Route path="/" component={Landing} >
             <Route path="playground" component={Experiments} />
-            <Route path="blog" component={Landing} />
         </Route>
     </Router>,
     document.getElementById('woah')

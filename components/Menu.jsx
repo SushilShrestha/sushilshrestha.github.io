@@ -20,7 +20,6 @@ var Menu = React.createClass({
         return <div style={menuStyle}>
                 <div style={menuItemStyle}><Link to="/">Home</Link></div>
                 <div style={menuItemStyle}><Link to="playground">PlayGround</Link></div>
-                <div style={menuItemStyle}><Link to="blog">Blog</Link></div>
             </div>
     }
 })
