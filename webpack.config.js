@@ -6,6 +6,7 @@ module.exports = {
     },
     output: {
         path: __dirname + '/build',
+
         filename: '[name].entry.js'
     },
     // plugins: [
