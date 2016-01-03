@@ -27,7 +27,7 @@ var containerStyle = {
     marginTop: "100px"
 }
 
-var csvUrl = "https://docs.google.com/spreadsheets/d/103E_Wm24mzOKDuEua6C5sjqzKXVriCojH-_7Cx1SabI/pub?output=csv"
+var csvUrl = "http://cors.io/docs.google.com/spreadsheets/d/103E_Wm24mzOKDuEua6C5sjqzKXVriCojH-_7Cx1SabI/pub?output=csv"
 var ListProjects = React.createClass({
     getInitialState: function(){
         return {data:[]}
