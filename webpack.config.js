@@ -15,8 +15,8 @@ module.exports = {
         loaders: [
             { test: /\.jsx$/, loader: 'babel?presets[]=react,presets[]=es2015', exclude: /(node_modules|bower_components)/ },
             { test: /\.css$/, loader: 'style-loader!css-loader' },
-            { test: /\.png$/, loader: 'file-loader?name=../../img/[name].[ext]' },
-            { test: /\.jpg$/, loader: 'file-loader?name=../../img/[name].[ext]' },
+            { test: /\.png$/, loader: 'file-loader?name=./images/[name].[ext]' },
+            { test: /\.jpg$/, loader: 'file-loader?name=./images/[name].[ext]' },
             { test: /\.html/, loader: 'file?name=./[name].[ext]' },
             ]
         },
