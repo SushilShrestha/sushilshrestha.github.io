@@ -27,7 +27,7 @@ var containerStyle = {
     marginTop: "100px"
 }
 
-var csvUrl = "http://cors.io/?u=https://docs.google.com/spreadsheets/d/103E_Wm24mzOKDuEua6C5sjqzKXVriCojH-_7Cx1SabI/pub?output=csv"
+var csvUrl = "http://afahocci-experiments.appspot.com/cors?url=https://docs.google.com/spreadsheets/d/103E_Wm24mzOKDuEua6C5sjqzKXVriCojH-_7Cx1SabI/pub?output=csv"
 var ListProjects = React.createClass({
     getInitialState: function(){
         return {data:[]}
@@ -36,7 +36,9 @@ var ListProjects = React.createClass({
         $.ajax({
             url: csvUrl,
             success: function(data){
-                var csvData = CSVParser.parse(data);
+                if (!data.status_code)
+                    return;
+                var csvData = CSVParser.parse(data.content);
                 var header = csvData[0];
                 csvData.splice(0,1)
 
