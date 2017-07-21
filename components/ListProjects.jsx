@@ -23,6 +23,9 @@ var ListItem = React.createClass({
 var containerStyle = {
     maxWidth:"650px",
     minWidth:"225px",
+    maxHeight:"650px",
+    minHeight:"225px",
+    overflowY: "auto",
     margin: "auto",
     marginTop: "100px"
 }
@@ -61,13 +64,13 @@ var ListProjects = React.createClass({
     },
     render: function(){
         // ["imgsrc", "title", "desc", "ahref"]
-        var items = [{ahref:"http://google.com", imgsrc:"http://hellohello.com", title:"hellohello hello", desc:"this is desc.this is descthis is descthis is descthis is descthis is descthis is desc"},
-                    {ahref:"http://google.com", imgsrc:"http://hellohello.com", title:"hello", desc:"this is desc"},
-                    {ahref:"http://google.com", imgsrc:"http://hellohello.com", title:"hello", desc:"this is desc"},
-                    {ahref:"http://google.com", imgsrc:"http://hellohello.com", title:"hello", desc:"this is desc"},
-                    {ahref:"http://google.com", imgsrc:"http://hellohello.com", title:"hello", desc:"this is desc"}]
+        //var items = [{ahref:"http://google.com", imgsrc:"http://hellohello.com", title:"hellohello hello", desc:"this is desc.this is descthis is descthis is descthis is descthis is descthis is desc"},
+        //            {ahref:"http://google.com", imgsrc:"http://hellohello.com", title:"hello", desc:"this is desc"},
+        //            {ahref:"http://google.com", imgsrc:"http://hellohello.com", title:"hello", desc:"this is desc"},
+        //            {ahref:"http://google.com", imgsrc:"http://hellohello.com", title:"hello", desc:"this is desc"},
+        //            {ahref:"http://google.com", imgsrc:"http://hellohello.com", title:"hello", desc:"this is desc"}]
 
-        console.log(this.state.data)
+        //console.log(this.state.data)
         items = this.state.data;
 
         var listedItems = items.map(item=><ListItem {...item} />)
