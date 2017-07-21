@@ -23,9 +23,8 @@ var ListItem = React.createClass({
 var containerStyle = {
     maxWidth:"650px",
     minWidth:"225px",
-    maxHeight:"650px",
-    minHeight:"225px",
-    overflowY: "auto",
+    maxHeight:"460px",
+    overflow: "auto",
     margin: "auto",
     marginTop: "100px"
 }
