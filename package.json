@@ -19,7 +19,7 @@
     "react-dom": "^0.14.3",
     "react-router": "^1.0.3",
     "style-loader": "^0.13.0",
-    "css-loader": "0.18.0",
+    "css-loader": "0.28.11",
     "url-loader": "^0.5.7",
     "webpack": "^1.12.9"
   },
